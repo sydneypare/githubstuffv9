@@ -24,13 +24,16 @@ namespace ClassLib
             //   }
             //  tmp2 = tmp;
 
-            int tmp2 = data.Length;
+
+            // int tmp2 = data.Length-bottom;
             // foreach(T item in data)
+            T kek = Peek();
+
+            int tmp1 = data.Count();
 
 
 
-
-            return tmp2;
+            return tmp1;
         }
 
         public bool Empty()
