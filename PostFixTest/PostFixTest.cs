@@ -4,7 +4,7 @@ using System;
 namespace PostFixTest
 {
     [TestClass]
-    public class UnitTest1
+    public class PostFixTest
     {
         [TestMethod]
         public void TestMethod1()
