@@ -25,14 +25,18 @@ namespace ClassLib
             //}
             // T tmp =data.Capacity();
             int tmp = 0;
+            int tmp2;
+
            //foreach(data.Count());
-           // foreach(T item in data)
-           // {
-           //      tmp;
-           // }
-            
-           
-            return tmp;
+            foreach(T item in data)
+            {
+                 tmp++;
+                
+            }
+            tmp2 = tmp;
+            return tmp2;
+
+
         }
 
         //return a bool

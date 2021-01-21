@@ -21,12 +21,13 @@ namespace StackTest
         }
 
         [TestMethod]
-        public void List_Count_string()
+        public void List_Count()
         {
-            Stack280L<string> q = new Stack280L<string>();
-            q.Push("test1");
-            q.Push("test1");
-            Assert.AreEqual(2, q.Empty());
+            Stack280L<int> q = new Stack280L<int>();
+            q.Push(1);
+            q.Push(3);
+
+            Assert.AreEqual(2, q.Count());
 
         }
 
