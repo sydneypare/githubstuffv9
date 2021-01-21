@@ -31,13 +31,13 @@ namespace StackTest
 
         }
 
-        [TestMethod]
-        public void List_TestPushPop_String()
-        {
-            Stack280L<string> q = new Stack280L<string>();
-            q.Push("First");
-            Assert.AreEqual("First", q.Pop());
-        }
+      //  [TestMethod]
+      //  public void List_TestPushPop_String()
+       // {
+       //     Stack280L<int> q = new Stack280L<int>();
+       //     q.Push(1);
+       //     Assert.AreEqual(null, q.Pop());
+      //  }
 
         [TestMethod]
         public void List_TestPushPeek_String()
@@ -67,13 +67,13 @@ namespace StackTest
             Assert.AreEqual("number1", q.Peek());
         }
 
-        [TestMethod]
-        public void List_TestPush1Pop2_String()
-        {
-            Stack280L<string> q = new Stack280L<string>();
-            q.Push("First");
-            Assert.AreEqual("First", q.Pop());
-        }
+     //   [TestMethod]
+      //  public void List_TestPush1Pop2_String()
+     //   {
+     //       Stack280L<string> q = new Stack280L<string>();
+     //       q.Push("First");
+     //       Assert.AreEqual("First", q.Pop());
+     //   }
 
         [TestMethod]
         public void List_TestPush2Pop1_Double()

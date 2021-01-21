@@ -78,8 +78,8 @@ namespace ClassLib
             // return tmp;
 
             T tmp;
-            data.RemoveAt(0);
-            tmp = data[0];
+            data.RemoveAt(data.Count-1);
+            tmp = data[data.Count - 1];
 
             return tmp;
 
