@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLib
 {
-    public class Stack280L
+    interface IStack<T>
     {
 
+        void Push(T o);
+        T Pop();
+        T Peek();
+        T Count();
+        T Empty();
 
 
     }
