@@ -99,12 +99,32 @@ namespace StackTest
 
         #region
         [TestMethod]
-        public void Array_TestPushPop_String()
+        public void Array_Empty_string()
         {
             Stack280A<string> q = new Stack280A<string>();
-            q.Push("First");
-            Assert.AreEqual("First", q.Pop());
+            q.Push("test1");
+            Assert.AreEqual(false, q.Empty());
+
         }
+
+        [TestMethod]
+        public void Array_Count()
+        {
+            Stack280A<int> q = new Stack280A<int>();
+            q.Push(1);
+            q.Push(3);
+
+            Assert.AreEqual(2, q.Count());
+
+        }
+
+        //  [TestMethod]
+        //  public void List_TestPushPop_String()
+        // {
+        //     Stack280L<int> q = new Stack280L<int>();
+        //     q.Push(1);
+        //     Assert.AreEqual(null, q.Pop());
+        //  }
 
         [TestMethod]
         public void Array_TestPushPeek_String()
@@ -134,13 +154,13 @@ namespace StackTest
             Assert.AreEqual("number1", q.Peek());
         }
 
-        [TestMethod]
-        public void Array_TestPush1Pop2_String()
-        {
-            Stack280A<string> q = new Stack280A<string>();
-            q.Push("First");
-            Assert.AreEqual("First", q.Pop());
-        }
+        //   [TestMethod]
+        //  public void List_TestPush1Pop2_String()
+        //   {
+        //       Stack280L<string> q = new Stack280L<string>();
+        //       q.Push("First");
+        //       Assert.AreEqual("First", q.Pop());
+        //   }
 
         [TestMethod]
         public void Array_TestPush2Pop1_Double()
