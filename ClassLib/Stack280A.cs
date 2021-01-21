@@ -8,29 +8,82 @@ namespace ClassLib
 {
     public class Stack280A<T> : IStack<T>
     {
+
+        T[] data = new T[10];
+        int top = 0;
+        int bottom = 0;
+
         public int Count()
         {
-            throw new NotImplementedException();
+            // int tmp = 0;
+            //int tmp2;
+            //  foreach (T item in data)
+            //  {
+            //      tmp++;
+
+            //   }
+            //  tmp2 = tmp;
+
+            int tmp2 = data.Length;
+            // foreach(T item in data)
+
+
+
+
+            return tmp2;
         }
 
         public bool Empty()
         {
-            throw new NotImplementedException();
+            //  bool empty;
+
+            //  if (data.Count != 0)
+            //  {
+            //     empty = true;
+            // }
+            // else
+            // {
+            //       empty = false;
+            //  }
+
+            bool empty;
+
+            if(data.Length == 0)
+            {
+                empty = true;
+            }
+            else
+            {
+                empty = false;
+            }
+            return empty;
         }
 
         public T Peek()
         {
-            throw new NotImplementedException();
+            return data[top];
         }
 
         public T Pop()
         {
-            throw new NotImplementedException();
+            T tmp = data[top];
+
+            top++;
+            return tmp;
         }
 
         public void Push(T o)
         {
-            throw new NotImplementedException();
+            if (data.Length - 1 == bottom)
+            {
+                T[] tmp = new T[data.Length * 2];
+                data.CopyTo(tmp, 0);
+                //cpuld use a loop
+                data = tmp;
+            }
+
+            data[bottom] = o;
+            bottom++;
         }
     }
 }
