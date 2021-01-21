@@ -9,16 +9,27 @@ namespace StackTest
     [TestClass]
     public class StackTest
     {
+        //List Tests!
+        #region
         [TestMethod]
-        public void TestMethod1()
+        public void List_Empty_string()
         {
-
+            Stack280L<string> q = new Stack280L<string>();
+            q.Push("test1");
+            Assert.AreEqual(false, q.Empty());
 
         }
 
-        //List Tests!
+        [TestMethod]
+        public void List_Count_string()
+        {
+            Stack280L<string> q = new Stack280L<string>();
+            q.Push("test1");
+            q.Push("test1");
+            Assert.AreEqual(2, q.Empty());
 
-        #region
+        }
+
         [TestMethod]
         public void List_TestPushPop_String()
         {

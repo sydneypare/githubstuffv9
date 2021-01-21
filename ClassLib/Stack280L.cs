@@ -10,29 +10,82 @@ namespace ClassLib
     {
 
         List<T> data = new List<T>();
-        public T Count()
+        //return num od objects in the stack
+        
+        //this one is fucked
+        public int Count()
         {
-            throw new NotImplementedException();
+
+            //throw new NotImplementedException();
+
+
+            //foreach (T Item in data)
+            //{
+            //  tmp;
+            //}
+            // T tmp =data.Capacity();
+            int tmp = 0;
+           //foreach(data.Count());
+           // foreach(T item in data)
+           // {
+           //      tmp;
+           // }
+            
+           
+            return tmp;
         }
 
-        public T Empty()
+        //return a bool
+        public bool Empty()
         {
-            throw new NotImplementedException();
+            bool empty;
+
+            if(data.Count ==0)
+            {
+                empty = true;
+            }
+            else
+            {
+                empty = false;
+            }
+
+             
+            return empty;
         }
 
+        //return last item pushed into stack
         public T Peek()
         {
-            throw new NotImplementedException();
+            return data[0];
         }
 
+        //this one is fucked
         public T Pop()
         {
-            throw new NotImplementedException();
+            //T data2;
+
+
+
+            //  T tmp;
+
+            // tmp = data[0];
+
+
+            // return tmp;
+
+            T tmp;
+            data.RemoveAt(0);
+            tmp = data[0];
+
+            return tmp;
+
+
+
         }
 
         public void Push(T o)
         {
-            throw new NotImplementedException();
+            data.Add(o);
         }
     }
 }

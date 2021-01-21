@@ -8,12 +8,12 @@ namespace ClassLib
 {
     public class Stack280A<T> : IStack<T>
     {
-        public T Count()
+        public int Count()
         {
             throw new NotImplementedException();
         }
 
-        public T Empty()
+        public bool Empty()
         {
             throw new NotImplementedException();
         }
